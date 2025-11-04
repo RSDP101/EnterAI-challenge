@@ -1,0 +1,10 @@
+# === Core parsing & extraction ===
+pdfplumber
+rapidfuzz
+python-dateutil
+
+# === Optional: OpenAI LLM fallback ===
+openai
+
+# === Utilities ===
+typing-extensions
