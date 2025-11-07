@@ -1,16 +1,15 @@
-(The file `/Users/rodri/Documents/EnterAI-challenge/README.md` exists, but is empty)
-Project: EnterAI-challenge
-
-Quick run instructions
-
 1. Install runtime deps (recommended in a venv):
 
-	pip install pdfplumber rapidfuzz
+	pip install -r requirements.txt
 
 2. Run the example dataset:
 
-	python run_examples.py --dataset examples/dataset.json
+	python bbox_extractor.py 
 
 Notes:
-- The extractor will call an LLM only if a label is unseen (no examples stored yet). After the registry has at least one example for a label, heuristics (anchors/regex/positional) are used.
-- If you want to enable the OpenAI-based LLM seeding step, set OPENAI_API_KEY in your environment.
+- pdf_parser.py implements the logic for sending an LLM call with the parsed text and the bounding box.
+- business_logic.py implements the main logic explained below:
+
+LOGIC:
+- LOGIC 1: For the first 5 calls, pass the text and the bounding boxes of blocks of text to the LLM, and let it decide what is the best way.
+- For the future calls: Obtain the center of the bounding box of the chosen response from the LLM. Then, return 
