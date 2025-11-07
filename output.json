@@ -1,0 +1,272 @@
+[
+  {
+    "label": "carteira_oab",
+    "extraction_schema": {
+      "nome": "Nome do profissional, normalmente no canto superior esquerdo da imagem",
+      "inscricao": "Número de inscrição do profissional",
+      "seccional": "Seccional do profissional",
+      "subsecao": "Subseção à qual o profissional faz parte",
+      "categoria": "Categoria, pode ser ADVOGADO, ADVOGADA, SUPLEMENTAR, ESTAGIARIO, ESTAGIARIA",
+      "endereco_profissional": "Endereço do profissional",
+      "telefone_profissional": "Telefone do profissional",
+      "situacao": "Situação do profissional, normalmente no canto inferior direito."
+    },
+    "pdf_path": "examples/oab_1.pdf",
+    "extracted_fields": {
+      "nome": "JOANA D'ARC",
+      "inscricao": "101943",
+      "seccional": "PR",
+      "subsecao": "CONSELHO SECCIONAL - PARANÁ",
+      "categoria": "SUPLEMENTAR",
+      "endereco_profissional": "AVENIDA PAULISTA, Nº 2300 andar Pilotis, Bela Vista",
+      "telefone_profissional": null,
+      "situacao": "SITUAÇÃO REGULAR"
+    }
+  },
+  {
+    "label": "carteira_oab",
+    "extraction_schema": {
+      "nome": "Nome do profissional, normalmente no canto superior esquerdo da imagem",
+      "inscricao": "Número de inscrição do profissional",
+      "seccional": "Seccional do profissional",
+      "subsecao": "Subseção à qual o profissional faz parte",
+      "categoria": "Categoria, pode ser ADVOGADO, ADVOGADA, SUPLEMENTAR, ESTAGIARIO, ESTAGIARIA",
+      "endereco_profissional": "Endereço do profissional",
+      "situacao": "Situação do profissional, normalmente no canto inferior direito."
+    },
+    "pdf_path": "examples/oab_2.pdf",
+    "extracted_fields": {
+      "nome": "LUIS FILIPE ARAUJO AMARAL",
+      "inscricao": "101943",
+      "seccional": "PR",
+      "subsecao": "CONSELHO SECCIONAL - PARANÁ",
+      "categoria": "SUPLEMENTAR",
+      "endereco_profissional": "AVENIDA PAULISTA, Nº 2300 andar Pilotis, Bela Vista, SÃO PAULO - SP, 01310300",
+      "situacao": "SITUAÇÃO REGULAR"
+    }
+  },
+  {
+    "label": "carteira_oab",
+    "extraction_schema": {
+      "nome": "Nome do profissional, normalmente no canto superior esquerdo da imagem",
+      "inscricao": "Número de inscrição do profissional",
+      "seccional": "Seccional do profissional",
+      "subsecao": "Subseção à qual o profissional faz parte",
+      "categoria": "Categoria, pode ser ADVOGADO, ADVOGADA, SUPLEMENTAR, ESTAGIARIO, ESTAGIARIA",
+      "telefone_profissional": "Telefone do profissional",
+      "situacao": "Situação do profissional, normalmente no canto inferior direito."
+    },
+    "pdf_path": "examples/oab_3.pdf",
+    "extracted_fields": {
+      "nome": "SON GOKU",
+      "inscricao": "101943",
+      "seccional": "PR",
+      "subsecao": "CONSELHO SECCIONAL - PARANÁ",
+      "categoria": "SUPLEMENTAR",
+      "telefone_profissional": null,
+      "situacao": "SITUAÇÃO REGULAR"
+    }
+  },
+  {
+    "label": "carteira_oab",
+    "extraction_schema": {
+      "nome": "Nome do profissional, normalmente no canto superior esquerdo da imagem",
+      "inscricao": "Número de inscrição do profissional",
+      "seccional": "Seccional do profissional",
+      "subsecao": "Subseção à qual o profissional faz parte",
+      "categoria": "Categoria, pode ser ADVOGADO, ADVOGADA, SUPLEMENTAR, ESTAGIARIO, ESTAGIARIA",
+      "telefone_profissional": "Telefone do profissional",
+      "situacao": "Situação do profissional, normalmente no canto inferior direito."
+    },
+    "pdf_path": "examples/oab_3.pdf",
+    "extracted_fields": {
+      "nome": "SON GOKU",
+      "inscricao": "101943",
+      "seccional": "PR",
+      "subsecao": "CONSELHO SECCIONAL - PARANÁ",
+      "categoria": "SUPLEMENTAR",
+      "telefone_profissional": null,
+      "situacao": "SITUAÇÃO REGULAR"
+    }
+  },
+  {
+    "label": "carteira_oab",
+    "extraction_schema": {
+      "nome": "Nome do profissional, normalmente no canto superior esquerdo da imagem",
+      "inscricao": "Número de inscrição do profissional",
+      "seccional": "Seccional do profissional",
+      "subsecao": "Subseção à qual o profissional faz parte",
+      "categoria": "Categoria, pode ser ADVOGADO, ADVOGADA, SUPLEMENTAR, ESTAGIARIO, ESTAGIARIA",
+      "endereco_profissional": "Endereço do profissional",
+      "situacao": "Situação do profissional, normalmente no canto inferior direito."
+    },
+    "pdf_path": "examples/oab_2.pdf",
+    "extracted_fields": {
+      "nome": "LUIS FILIPE ARAUJO AMARAL",
+      "inscricao": "101943",
+      "seccional": "PR",
+      "subsecao": "CONSELHO SECCIONAL - PARANÁ",
+      "categoria": "SUPLEMENTAR",
+      "endereco_profissional": "AVENIDA PAULISTA, Nº 2300 andar Pilotis, Bela Vista",
+      "situacao": "SITUAÇÃO REGULAR"
+    }
+  },
+  {
+    "label": "carteira_oab",
+    "extraction_schema": {
+      "nome": "Nome do profissional, normalmente no canto superior esquerdo da imagem",
+      "inscricao": "Número de inscrição do profissional",
+      "seccional": "Seccional do profissional",
+      "subsecao": "Subseção à qual o profissional faz parte",
+      "categoria": "Categoria, pode ser ADVOGADO, ADVOGADA, SUPLEMENTAR, ESTAGIARIO, ESTAGIARIA",
+      "endereco_profissional": "Endereço do profissional",
+      "telefone_profissional": "Telefone do profissional",
+      "situacao": "Situação do profissional, normalmente no canto inferior direito."
+    },
+    "pdf_path": "examples/oab_1.pdf",
+    "extracted_fields": {
+      "nome": "JOANA D'ARC",
+      "inscricao": "101943",
+      "seccional": "PR",
+      "subsecao": "CONSELHO SECCIONAL - PARANÁ",
+      "categoria": "SUPLEMENTAR",
+      "endereco_profissional": "AVENIDA PAULISTA, Nº 2300 andar Pilotis, Bela Vista",
+      "telefone_profissional": null,
+      "situacao": "SITUAÇÃO REGULAR"
+    }
+  },
+  {
+    "label": "tela_sistema",
+    "extraction_schema": {
+      "data_base": "Data base da operação selectionada",
+      "data_verncimento": "Data de vencimento da operação selectionada",
+      "quantidade_parcelas": "Quantidade de parcelas da operação selectionada",
+      "produto": "Produto da operação selectionada",
+      "sistema": "Sistema da operação selectionada",
+      "tipo_de_operacao": "Tipo de operação",
+      "tipo_de_sistema": "Tipo de sistema"
+    },
+    "pdf_path": "examples/tela_sistema_1.pdf",
+    "extracted_fields": {
+      "data_base": "05/09/2025",
+      "data_verncimento": "12/10/2025",
+      "quantidade_parcelas": null,
+      "produto": "0 CONSIGNADO",
+      "sistema": null,
+      "tipo_de_operacao": null,
+      "tipo_de_sistema": null
+    }
+  },
+  {
+    "label": "tela_sistema",
+    "extraction_schema": {
+      "pesquisa_por": "Na consulta de cobrança, a pesquisa é efetuado por? Ela pode ser feita por cliente, parente, prestador ou outro",
+      "pesquisa_tipo": "Tipo de pesquisa, pode ser por cpf, cnpj, Nome ou email",
+      "sistema": "Sistema da operação selectionada",
+      "valor_parcela": "Valor da parcela da operação selectionada",
+      "cidade": "Cidade da operação selectionada"
+    },
+    "pdf_path": "examples/tela_sistema_2.pdf",
+    "extracted_fields": {
+      "pesquisa_por": "CLIENTE",
+      "pesquisa_tipo": "CPF",
+      "sistema": "CONSIGNADO",
+      "valor_parcela": "2.372,64",
+      "cidade": "Mozarlândia"
+    }
+  },
+  {
+    "label": "tela_sistema",
+    "extraction_schema": {
+      "data_base": "Data base da operação selectionada",
+      "data_verncimento": "Data de vencimento da operação selectionada",
+      "quantidade_parcelas": "Quantidade de parcelas da operação selectionada",
+      "produto": "Produto da operação selectionada",
+      "sistema": "Sistema da operação selectionada",
+      "tipo_de_operacao": "Tipo de operação",
+      "tipo_de_sistema": "Tipo de sistema"
+    },
+    "pdf_path": "examples/tela_sistema_1.pdf",
+    "extracted_fields": {
+      "data_base": "05/09/2025",
+      "data_verncimento": "12/10/2025",
+      "quantidade_parcelas": null,
+      "produto": "CONSIGNADO",
+      "sistema": "CONSIGNADO",
+      "tipo_de_operacao": null,
+      "tipo_de_sistema": null
+    }
+  },
+  {
+    "label": "tela_sistema",
+    "extraction_schema": {
+      "data_referencia": "Data de referencia da operação selectionada do detalhamento de saldos por parcelas",
+      "selecao_de_parcelas": "Seleção de parcelas da operação selectionada do detalhamento de saldos por parcelas, pode ser vencido, pago ou pendente",
+      "total_de_parcelas": "Valor total, normalmente no canto inferior esquerdo da imagem"
+    },
+    "pdf_path": "examples/tela_sistema_3.pdf",
+    "extracted_fields": {
+      "data_referencia": null,
+      "selecao_de_parcelas": null,
+      "total_de_parcelas": null
+    }
+  },
+  {
+    "label": "tela_sistema",
+    "extraction_schema": {
+      "data_referencia": "Data de referencia da operação selectionada do detalhamento de saldos por parcelas",
+      "selecao_de_parcelas": "Seleção de parcelas da operação selectionada do detalhamento de saldos por parcelas, pode ser vencido, pago ou pendente",
+      "total_de_parcelas": "Valor total, normalmente no canto inferior esquerdo da imagem"
+    },
+    "pdf_path": "examples/tela_sistema_3.pdf",
+    "extracted_fields": {
+      "data_referencia": null,
+      "selecao_de_parcelas": null,
+      "total_de_parcelas": null
+    }
+  },
+  {
+    "label": "tela_sistema",
+    "extraction_schema": {
+      "data_base": "Data base da operação selectionada",
+      "data_verncimento": "Data de vencimento da operação selectionada",
+      "quantidade_parcelas": "Quantidade de parcelas da operação selectionada",
+      "produto": "Produto da operação selectionada",
+      "sistema": "Sistema da operação selectionada",
+      "tipo_de_operacao": "Tipo de operação",
+      "tipo_de_sistema": "Tipo de sistema"
+    },
+    "pdf_path": "examples/tela_sistema_1.pdf",
+    "extracted_fields": {
+      "data_base": "Data Referência: 05/09/2025",
+      "data_verncimento": "12/10/2025",
+      "quantidade_parcelas": null,
+      "produto": "0 CONSIGNADO",
+      "sistema": "Atualizar",
+      "tipo_de_operacao": null,
+      "tipo_de_sistema": null
+    }
+  },
+  {
+    "label": "tela_sistema",
+    "extraction_schema": {
+      "data_base": "Data base da operação selectionada",
+      "data_verncimento": "Data de vencimento da operação selectionada",
+      "quantidade_parcelas": "Quantidade de parcelas da operação selectionada",
+      "produto": "Produto da operação selectionada",
+      "sistema": "Sistema da operação selectionada",
+      "tipo_de_operacao": "Tipo de operação",
+      "tipo_de_sistema": "Tipo de sistema"
+    },
+    "pdf_path": "examples/tela_sistema_1.pdf",
+    "extracted_fields": {
+      "data_base": "Data Referência: 05/09/2025",
+      "data_verncimento": "12/10/2025",
+      "quantidade_parcelas": null,
+      "produto": "0 CONSIGNADO",
+      "sistema": "Atualizar",
+      "tipo_de_operacao": null,
+      "tipo_de_sistema": null
+    }
+  }
+]

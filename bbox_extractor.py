@@ -2,7 +2,7 @@
 import os, json, math
 from typing import Dict, List, Optional
 from pdf_parser import parse_pdf, llm_extract
-
+from extract_text_with_custom_splits import extract_text_with_custom_splits
 MEMORY_PATH = "bbox_memory.json"
 
 
@@ -74,13 +74,30 @@ def extract_by_geometry(label: str, schema: Dict[str, str], lines: List[Dict]) -
 
 
 # ============ Controller logic ============
-def extract(label: str, schema: Dict[str, str], pdf_bytes: bytes):
+def extract(label: str, schema: Dict[str, str], pdf_bytes):
     """
     Strategy:
     - For first 3 samples of a label: use LLM, store bounding boxes.
     - After 3 samples: use geometric proximity extraction (no LLM).
     """
-    lines = parse_pdf(pdf_bytes)
+
+    # lines = parse_pdf(pdf_bytes)
+    lines_list = extract_text_with_custom_splits(pdf_bytes)
+    lines = []
+    for text, bbox in lines_list:
+        if not text.strip():
+            continue
+        lines.append({
+            "page": 1,              # assuming 1-page PDFs (update if multi-page)
+            "text": text.strip(),
+            "bbox": [float(b) for b in bbox],
+        })
+
+    print("\n=== EXTRACTED OCR LINES ===")
+    for l in lines:
+        print(f"{l['text']!r}  →  {l['bbox']}")
+    print("============================\n")
+
     mem = load_memory()
     label_mem = mem.get(label, {"seen": 0})
     seen = label_mem.get("seen", 0)
