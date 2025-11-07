@@ -19,5 +19,5 @@ The whole learning algorithm is explained below for a fixed label:
 
 1. [LLM EXTRACTION] For the first 3 steps, the LLM is called directly by passing the segmented boxes obtained. Then, the centers of the returned boxes for each keyword are stored in memory. With time, the model learns the average representation of the mean center of a particular keyword. 
 
-2. [GEOMETRIC EXTRACTION] In the future steps, it will assume the mean-center is a "good" estimate of the correct box position, and then will pick the box that is closest to this mean-estimate. If less than 50% of the fields are found 
+2. [GEOMETRIC EXTRACTION] In the future steps, it will assume the mean-center is a "good" estimate of the correct box position, and then will pick the box that is closest to this mean-estimate. If less than 50% of the fields are found, then the LLM EXTRACTION strategy is implemented to gather more data.
 
