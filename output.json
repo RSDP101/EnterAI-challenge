@@ -61,7 +61,7 @@
       "nome": "SON GOKU",
       "inscricao": "101943",
       "seccional": "PR",
-      "subsecao": null,
+      "subsecao": "CONSELHO SECCIONAL - PARANÁ",
       "categoria": "SUPLEMENTAR",
       "telefone_profissional": null,
       "situacao": "SITUAÇÃO REGULAR"
@@ -188,7 +188,7 @@
     },
     "pdf_path": "examples/tela_sistema_1.pdf",
     "extracted_fields": {
-      "data_base": "05/09/2025",
+      "data_base": "Data Referência: 05/09/2025",
       "data_verncimento": "12/10/2025",
       "quantidade_parcelas": null,
       "produto": "0 CONSIGNADO",

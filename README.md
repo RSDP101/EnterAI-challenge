@@ -1,8 +1,8 @@
 ## Quick run instructions
 
 1. Install runtime deps (recommended in a venv):
-
 	pip install -r requirements.txt
+	export OPENAI_API_KEY=<API_KEY>
 
 2. Add yours samples and a dataset.json file containing their label schemas. You can follow the format specified in examples/dataset.json for running in series.
 
