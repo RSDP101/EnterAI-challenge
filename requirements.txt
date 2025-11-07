@@ -1,10 +1,17 @@
-# === Core parsing & extraction ===
-pdfplumber
-rapidfuzz
-python-dateutil
-
-# === Optional: OpenAI LLM fallback ===
-openai
-
-# === Utilities ===
-typing-extensions
+pytz               
+pyxnat             
+RapidFuzz          
+rdflib             
+requests        
+scipy             
+simplejson         
+six                
+sniffio            
+starlette          
+tqdm              
+traits           
+typing_extensions 
+typing-inspection  
+tzdata            
+urllib3            
+uvicorn         

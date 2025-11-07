@@ -64,34 +64,34 @@ def parse_pdf(pdf_bytes: bytes):
                 })
     return lines
 
-if __name__ == "__main__":
-    import json
-    label = "carteira_oab"  # e.g. "Invoice", "Contract", "Customer_Info"
-    schema ={
-        "nome": "Nome do profissional, normalmente no canto superior esquerdo da imagem",
-        "inscricao": "Número de inscrição do profissional",
-        "seccional": "Seccional do profissional",
-        "subsecao": "Subseção à qual o profissional faz parte",
-        "categoria": "Categoria, pode ser ADVOGADO, ADVOGADA, SUPLEMENTAR, ESTAGIARIO, ESTAGIARIA",
-        "endereco_profissional": "Endereço do profissional",
-        "situacao": "Situação do profissional, normalmente no canto inferior direito."
-      }
-    pdf_path = "./examples/oab_2.pdf"  # <-- change this path
+# if __name__ == "__main__":
+#     import json
+#     label = "carteira_oab"  # e.g. "Invoice", "Contract", "Customer_Info"
+#     schema ={
+#         "nome": "Nome do profissional, normalmente no canto superior esquerdo da imagem",
+#         "inscricao": "Número de inscrição do profissional",
+#         "seccional": "Seccional do profissional",
+#         "subsecao": "Subseção à qual o profissional faz parte",
+#         "categoria": "Categoria, pode ser ADVOGADO, ADVOGADA, SUPLEMENTAR, ESTAGIARIO, ESTAGIARIA",
+#         "endereco_profissional": "Endereço do profissional",
+#         "situacao": "Situação do profissional, normalmente no canto inferior direito."
+#       }
+#     pdf_path = "./examples/oab_2.pdf"  # <-- change this path
 
-    with open(pdf_path, "rb") as f:
-        pdf_bytes = f.read()
+#     with open(pdf_path, "rb") as f:
+#         pdf_bytes = f.read()
 
-    lines = parse_pdf(pdf_bytes)
-    print(f"Extracted {len(lines)} text blocks from PDF.")
+#     lines = parse_pdf(pdf_bytes)
+#     print(f"Extracted {len(lines)} text blocks from PDF.")
 
-    # === OPTIONAL: PRINT FIRST FEW LINES ===
-    for l in lines[:5]:
-        print(l)
+#     # === OPTIONAL: PRINT FIRST FEW LINES ===
+#     for l in lines[:5]:
+#         print(l)
 
-    # === RUN LLM EXTRACTION ===
-    if USE_LLM:
-        result = llm_extract(label, schema, lines)
-        print("\n=== LLM Output ===")
-        print(json.dumps(result, indent=2, ensure_ascii=False))
-    else:
-        print("⚠️ OPENAI_API_KEY not set, skipping LLM extraction.")
+#     # === RUN LLM EXTRACTION ===
+#     if USE_LLM:
+#         result = llm_extract(label, schema, lines)
+#         print("\n=== LLM Output ===")
+#         print(json.dumps(result, indent=2, ensure_ascii=False))
+#     else:
+#         print("⚠️ OPENAI_API_KEY not set, skipping LLM extraction.")

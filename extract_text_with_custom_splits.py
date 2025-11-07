@@ -64,10 +64,10 @@ def extract_text_with_custom_splits(pdf_bytes: bytes, x_gap_thresh=30, space_thr
     return results
 
 
-if __name__ == "__main__":
-    pdf_path = "./examples/oab_1.pdf"  # change path
-    with open(pdf_path, "rb") as f:
-        pdf_bytes = f.read()
+# if __name__ == "__main__":
+#     pdf_path = "./examples/oab_1.pdf"  # change path
+#     with open(pdf_path, "rb") as f:
+#         pdf_bytes = f.read()
 
-    results = extract_text_with_custom_splits(pdf_bytes)
-    print (results)
+#     results = extract_text_with_custom_splits(pdf_bytes)
+#     print (results)

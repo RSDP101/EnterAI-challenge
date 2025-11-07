@@ -115,7 +115,28 @@ def extract(label: str, schema: Dict[str, str], pdf_bytes):
 
     # Case 2: Geometric extraction after 3 samples
     print(f"[INFO] Using geometric extraction for label '{label}' (seen={seen}).")
-    return extract_by_geometry(label, schema, lines)
+    geo_result = extract_by_geometry(label, schema, lines)
+
+    # ✅ Count how many fields are None
+    total_fields = len(schema)
+    null_fields = sum(1 for v in geo_result.values() if v is None)
+    null_ratio = null_fields / total_fields if total_fields else 0
+
+    print(f"[DEBUG] Geometric extraction null ratio: {null_ratio:.2%}")
+
+    # ✅ If more than 50% of fields are missing → call LLM as fallback
+    if null_ratio > 0.5:
+        print(f"[INFO] More than 50% fields missing ({null_ratio:.1%}). Retrying with LLM...")
+        try:
+            llm_result = llm_extract(label, schema, lines)
+            update_memory(label, llm_result)
+            return llm_result
+        except Exception as e:
+            print(f"[ERROR] LLM fallback failed ({e}). Returning geometric result instead.")
+            return geo_result
+
+    # Otherwise keep geometric result
+    return geo_result
 
 
 # ============ CLI: Batch dataset runner ============

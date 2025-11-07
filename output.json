@@ -18,7 +18,7 @@
       "seccional": "PR",
       "subsecao": "CONSELHO SECCIONAL - PARANÁ",
       "categoria": "SUPLEMENTAR",
-      "endereco_profissional": "AVENIDA PAULISTA, Nº 2300 andar Pilotis, Bela Vista",
+      "endereco_profissional": "AVENIDA PAULISTA, Nº 2300 andar Pilotis, Bela Vista; SÃO PAULO - SP; 01310300",
       "telefone_profissional": null,
       "situacao": "SITUAÇÃO REGULAR"
     }
@@ -41,7 +41,7 @@
       "seccional": "PR",
       "subsecao": "CONSELHO SECCIONAL - PARANÁ",
       "categoria": "SUPLEMENTAR",
-      "endereco_profissional": "AVENIDA PAULISTA, Nº 2300 andar Pilotis, Bela Vista, SÃO PAULO - SP, 01310300",
+      "endereco_profissional": "AVENIDA PAULISTA, Nº 2300 andar Pilotis, Bela Vista; SÃO PAULO - SP; 01310300",
       "situacao": "SITUAÇÃO REGULAR"
     }
   },
@@ -61,7 +61,7 @@
       "nome": "SON GOKU",
       "inscricao": "101943",
       "seccional": "PR",
-      "subsecao": "CONSELHO SECCIONAL - PARANÁ",
+      "subsecao": null,
       "categoria": "SUPLEMENTAR",
       "telefone_profissional": null,
       "situacao": "SITUAÇÃO REGULAR"
@@ -153,7 +153,7 @@
       "quantidade_parcelas": null,
       "produto": "0 CONSIGNADO",
       "sistema": null,
-      "tipo_de_operacao": null,
+      "tipo_de_operacao": "Vencidas",
       "tipo_de_sistema": null
     }
   },
@@ -191,8 +191,8 @@
       "data_base": "05/09/2025",
       "data_verncimento": "12/10/2025",
       "quantidade_parcelas": null,
-      "produto": "CONSIGNADO",
-      "sistema": "CONSIGNADO",
+      "produto": "0 CONSIGNADO",
+      "sistema": null,
       "tipo_de_operacao": null,
       "tipo_de_sistema": null
     }
@@ -206,9 +206,9 @@
     },
     "pdf_path": "examples/tela_sistema_3.pdf",
     "extracted_fields": {
-      "data_referencia": null,
-      "selecao_de_parcelas": null,
-      "total_de_parcelas": null
+      "data_referencia": "04/02/2021",
+      "selecao_de_parcelas": "V",
+      "total_de_parcelas": "96"
     }
   },
   {
@@ -220,9 +220,9 @@
     },
     "pdf_path": "examples/tela_sistema_3.pdf",
     "extracted_fields": {
-      "data_referencia": null,
-      "selecao_de_parcelas": null,
-      "total_de_parcelas": null
+      "data_referencia": "04/02/2021",
+      "selecao_de_parcelas": "V",
+      "total_de_parcelas": "96"
     }
   },
   {
@@ -242,8 +242,8 @@
       "data_verncimento": "12/10/2025",
       "quantidade_parcelas": null,
       "produto": "0 CONSIGNADO",
-      "sistema": "Atualizar",
-      "tipo_de_operacao": null,
+      "sistema": "Data Referência: 05/09/2025",
+      "tipo_de_operacao": "Vencidas",
       "tipo_de_sistema": null
     }
   },
@@ -264,8 +264,8 @@
       "data_verncimento": "12/10/2025",
       "quantidade_parcelas": null,
       "produto": "0 CONSIGNADO",
-      "sistema": "Atualizar",
-      "tipo_de_operacao": null,
+      "sistema": "Data Referência: 05/09/2025",
+      "tipo_de_operacao": "Vencidas",
       "tipo_de_sistema": null
     }
   }
